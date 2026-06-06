@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Huy Chanchhinghoir | Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+  <style>
+    .hero{flex-direction:row;justify-content:space-between;gap:60px}
+    .hero-image-wrap{
+      flex-shrink:0;display:flex;align-items:center;justify-content:center;z-index:1;
+    }
+    .hero-image-wrap img{
+      width:320px;height:380px;
+      object-fit:cover;
+      border-radius:24px;
+      border:2px solid rgba(232,201,122,0.3);
+      box-shadow:0 0 60px rgba(124,106,255,0.15);
+    }
+    .hero-image-placeholder{
+      width:320px;height:380px;
+      border-radius:24px;
+      border:2px dashed rgba(232,201,122,0.4);
+      display:flex;flex-direction:column;
+      align-items:center;justify-content:center;
+      color:var(--muted);font-size:13px;text-align:center;gap:12px;
+      background:rgba(232,201,122,0.03);
+    }
+    .hero-image-placeholder span{font-size:40px}
+    @media(max-width:900px){
+      .hero{flex-direction:column-reverse;align-items:flex-start}
+      .hero-image-wrap img,
+      .hero-image-placeholder{width:180px;height:180px;border-radius:50%}
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">H·C</div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="experience.html">Experience</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+
+  <!-- LEFT: Text content -->
+  <div class="hero-content">
+    <div class="hero-tag fade-up">Available for internship</div>
+    <h1 class="fade-up delay-1">
+      Huy<br><span>Chanchhinghoir</span>
+    </h1>
+    <p class="hero-sub fade-up delay-2">
+      4th-year Software Engineer at ITC, building scalable full-stack web
+      applications with <strong style="color:var(--text)">NestJS, Vue.js, Next.js</strong>
+      and <strong style="color:var(--text)">Spring Boot</strong>.
+    </p>
+    <div class="hero-btns fade-up delay-3">
+      <a class="btn-primary" href="projects.html">View Projects</a>
+      <a class="btn-ghost"   href="contact.html">Get in Touch</a>
+    </div>
+    <div class="hero-meta fade-up delay-4">
+      <div class="hero-meta-item">
+        <div class="hero-meta-num">4th</div>
+        <div class="hero-meta-label">Year Student</div>
+      </div>
+      <div class="hero-meta-item">
+        <div class="hero-meta-num">3+</div>
+        <div class="hero-meta-label">Projects</div>
+      </div>
+      <div class="hero-meta-item">
+        <div class="hero-meta-num">5+</div>
+        <div class="hero-meta-label">Technologies</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT: Your photo — replace huy.jpg with your actual filename -->
+  <div class="hero-image-wrap fade-up delay-2">
+
+    <!-- ✅ OPTION 1: Use this when you have your photo ready -->
+    <!-- <img src="assets/images/huy.jpg" alt="Huy Chanchhinghoir"/> -->
+
+    <!-- 👇 OPTION 2: Placeholder shown until you add your photo -->
+    <div class="hero-image-placeholder">
+      <code style="font-size:11px;color:var(--accent)">
+       <img src="assets/images/huy.jpg" alt="Huy Chanchhinghoir"></img>
+
+      </code>
+    </div>
+
+  </div>
+
+</section>
+
+<footer>
+  <div class="footer-logo">Huy Chanchhinghoir</div>
+  <div class="footer-copy">© 2026 · Phnom Penh, Cambodia</div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
